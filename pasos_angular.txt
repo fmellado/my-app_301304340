@@ -1,0 +1,50 @@
+Crear un proyecto nuevo en angular
+https://angular.io/guide/setup-local
+
+Comando siguente:
+ng new my-app
+
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? SCSS   [ https://sass-lang.com/documentation/syntax#scss
+ ]
+CREATE my-app_fmm/angular.json (2894 bytes)
+CREATE my-app_fmm/package.json (1041 bytes)
+CREATE my-app_fmm/README.md (1062 bytes)
+CREATE my-app_fmm/tsconfig.json (901 bytes)
+CREATE my-app_fmm/.editorconfig (274 bytes)
+CREATE my-app_fmm/.gitignore (548 bytes)
+CREATE my-app_fmm/tsconfig.app.json (263 bytes)
+CREATE my-app_fmm/tsconfig.spec.json (273 bytes)
+CREATE my-app_fmm/.vscode/extensions.json (130 bytes)
+CREATE my-app_fmm/.vscode/launch.json (470 bytes)
+CREATE my-app_fmm/.vscode/tasks.json (938 bytes)
+CREATE my-app_fmm/src/main.ts (214 bytes)
+CREATE my-app_fmm/src/favicon.ico (948 bytes)
+CREATE my-app_fmm/src/index.html (294 bytes)
+CREATE my-app_fmm/src/styles.scss (80 bytes)
+CREATE my-app_fmm/src/app/app-routing.module.ts (245 bytes)
+CREATE my-app_fmm/src/app/app.module.ts (393 bytes)
+CREATE my-app_fmm/src/app/app.component.html (23115 bytes)
+CREATE my-app_fmm/src/app/app.component.spec.ts (1003 bytes)
+CREATE my-app_fmm/src/app/app.component.ts (215 bytes)
+CREATE my-app_fmm/src/app/app.component.scss (0 bytes)
+CREATE my-app_fmm/src/assets/.gitkeep (0 bytes)
+\ Installing packages (npm)...
+
+Al finlizar
+	CODE para abrir editor de codigo
+	
+- Ir al directorio el CMD donde se creo el proyecto
+- iniciar serviio con comando 
+		cd my-appfmm
+		ng serve --open 
+
+
+Crea modulos
+	ng create module contact
+Crear Componentes
+	ng create component Contact
+
+
+- Se compila con ng serve -o
+

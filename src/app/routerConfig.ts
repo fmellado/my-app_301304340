@@ -24,7 +24,7 @@ const appRoutes: Routes = [
         component:ContactComponent,
     },
     {
-        path:'service',
+        path:'services',
         component:ServicesComponent,
     },
 ];

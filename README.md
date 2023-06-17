@@ -1,4 +1,7 @@
 # MyAppFmm
+This Was made by Francisco Mellado, Student ID 301304340
+date: 2023-Jun- 16
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
 

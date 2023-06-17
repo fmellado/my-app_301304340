@@ -1,2 +1,51 @@
-<p>Goku Salvame!</p>
-<img src="https://cdn.superaficionados.com/imagenes/aumenta-tu-energia-ki-con-las-mejores-imagenes-de-goku-og.jpg" alt="Trulli" width="500" height="333">
+<style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    form div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+  
+    form label {
+      align-self: flex-start;
+      margin-bottom: 5px;
+    }
+  
+    form button {
+      align-self: center;
+    }
+  </style>
+  
+  <form (ngSubmit)="submitForm()">
+    <div>
+      <label for="name">First Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+    </div>
+    <div>
+        <label for="number">Contact Number:</label>
+        <input type="text" id="number" name="number" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="menssage">Message:</label>
+      <textarea id="menssage" name="menssage" required></textarea>
+    </div>
+    
+    <div>
+      <button type="submit">Send</button>
+    </div>
+  </form>
+  

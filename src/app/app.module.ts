@@ -17,10 +17,12 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 
 import  appRoutes from './routerConfig';
+import { BussinesComponent } from './bussines/bussines.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, ProjectComponent, ContactComponent, ServicesComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, ProjectComponent, ContactComponent, ServicesComponent, BussinesComponent, AdminComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

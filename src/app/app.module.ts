@@ -18,11 +18,12 @@ import { ServicesComponent } from './services/services.component';
 
 import  appRoutes from './routerConfig';
 import { BussinesComponent } from './bussines/bussines.component';
-import { AdminComponent } from './admin/admin.component';
-
+//import { AdminComponent } from './admin/admin.component';
+// Import the module from the SDK
+import { AuthModule } from '@auth0/auth0-angular';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, ProjectComponent, ContactComponent, ServicesComponent, BussinesComponent, AdminComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, ProjectComponent, ContactComponent, ServicesComponent, BussinesComponent],//, AdminComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,8 +32,16 @@ import { AdminComponent } from './admin/admin.component';
     MatToolbarModule,
     MatButtonModule,
     RouterModule,
-    RouterModule.forRoot(appRoutes)
-  ],
+    RouterModule.forRoot(appRoutes),
+    // Import the module into the application, with configuration
+    AuthModule.forRoot({
+      domain: 'dev-0apyuxgw71s4tzna.us.auth0.com',
+      clientId: 'JFEp7Rz7rMXlDQJr9ADNWQogDhOlwGLg',
+      authorizationParams: {
+        redirect_uri: window.location.origin
+      }
+    }),
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })

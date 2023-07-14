@@ -5,13 +5,19 @@
   <span class="example-spacer"></span>
   <div>
     <nav>
-      <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
-      <a mat-button routerLink="/about">About    </a>
-      <a mat-button routerLink="/project">Project </a>
-      <a mat-button routerLink="/contact">Contact </a>
-      <a mat-button routerLink="/services">Services </a>
-      <a mat-button routerLink="/bussines">Business </a>
+      <button type="button" routerLink="/home" class="btn btn-outline-primary"> Home</button>
+      <button type="button" routerLink="/about" class="btn btn-outline-primary"> About</button>
+      <button type="button" routerLink="/project" class="btn btn-outline-primary"> Project</button>
+      <button type="button" routerLink="/contact" class="btn btn-outline-primary"> Contact</button>
+      <button type="button" routerLink="/services" class="btn btn-outline-primary"> Services</button>
+      <button type="button" (click)= "login()" class="btn btn-outline-primary me-2"> Business</button>
+      <!--<a mat-button routerLink="/admin">Admin </a>-->
+      
+      
     </nav>
+    <!--<div class="col-md-3 text-end">
+      <button type="button" (click)= "login()" class="btn btn-outline-primary me-2">LogOut</button>
+    </div> -->
   </div>
 </mat-toolbar>
 

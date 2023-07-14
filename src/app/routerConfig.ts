@@ -6,6 +6,7 @@ import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { BussinesComponent} from './bussines/bussines.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
     {
@@ -32,6 +33,10 @@ const appRoutes: Routes = [
         path:'bussines',
         component:BussinesComponent,
     },
+    {
+        path: 'admin',
+        component:AdminComponent,
+    }
 ];
 
 export default appRoutes;
